@@ -18,7 +18,7 @@ validationErrors: string[] = [];
       console.log(response);
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   get400Error() {
@@ -26,7 +26,7 @@ validationErrors: string[] = [];
       console.log(response);
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   get500Error() {
@@ -34,7 +34,7 @@ validationErrors: string[] = [];
       console.log(response);
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   get401Error() {
@@ -42,7 +42,7 @@ validationErrors: string[] = [];
       console.log(response);
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   get400ValidationError() {
@@ -51,6 +51,6 @@ validationErrors: string[] = [];
     }, error => {
       console.log(error);
       this.validationErrors = error;
-    })
+    });
   }
 }
