@@ -11,7 +11,7 @@ baseUrl = 'https://localhost:44363/api/';
 validationErrors: string[] = [];
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
-  }
+  }  
 
   get404Error() {
     this.http.get(this.baseUrl + 'buggy/not-found').subscribe(response => {
